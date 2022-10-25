@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    direction: rtl;
+}
+body{
+    scroll-behavior: smooth;
+}
+:root{
+    --main-color: #1746A2;
+    --second-color: #5F9DF7;
+    --main-text-color: #FF731D;
+    --white: #FFF7E9;
+    --bg-color: #263238;
+    --black-color: black;
+}
+/* Componats */
+.container{
+    width: 90%;
+    padding: 50px 0;
+    margin: 0 auto;
+}
+/* Start login & register */
+.login-register{
+    border: 3px solid #eee;
+    border-radius: 9px;
+    min-height: calc(100vh - 100px);
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url(../img/login.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; */
+}
+.login-register .btn button{
+    padding: 10px 10px;
+    background-color: var(--bg-color);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+/* login */
+.login-register .login{
+    width: calc(50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-register .login form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login-register .login form input:not([type = "submit"]){
+    width: 500px;
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid gray;
+}
+.login-register .login form input[type = "submit"]{
+    display: block;
+    margin: 20px auto;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+.login-register .login form span{
+    text-decoration: underline;
+    color: #1746A2;
+    cursor: pointer;
+}
+/* register */
+.login-register .register{
+    width: calc(50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.login-register .register form input:not([type = "submit"]){
+    width: 500px;
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid gray;
+}
+.login-register .register form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login-register .register form input[type = "submit"]{
+    display: block;
+    margin: 20px auto;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+.login-register .register form span{
+    text-decoration: underline;
+    color: #1746A2;
+    cursor: pointer;
+}
+.login-register .btn .active{
+    background-color: var(--main-text-color);
+    color: var(--bg-color);
+}
+/* End login & register */
+
+
+/* -----------madia queries */
+/* -------------mobile------------- */
+@media (max-width: 767px){
+    .login-register .login form input:not([type = "submit"]){
+        width: 250px;
+    }
+    .login-register .register form input:not([type = "submit"]){
+        width: 250px;
+    }
+}
+
+
+/* ----------small screen---------------- */
+@media (min-width: 767px) and (max-width: 992px){
+}
+
+
+/* ----------medium screen--------------------- */
+@media (min-width: 992px) and (max-width: 1200px){
+}
+
+
+/* ---------large screen */
+@media (min-width: 1200px){
+
+}

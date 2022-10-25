@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    direction: rtl;
+}
+body{
+    scroll-behavior: smooth;
+}
+:root{
+    --main-color: #1746A2;
+    --second-color: #5F9DF7;
+    --main-text-color: #FF731D;
+    --white: #FFF7E9;
+    --bg-color: #263238;
+    --black-color: black;
+}
+/* Componats */
+.container{
+    width: 90%;
+    padding: 50px 0;
+    margin: 0 auto;
+}
+/* Start about */
+.about{
+    direction: ltr;
+    min-height: calc(100vh - 100px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about img{
+    width: calc(100% / 2 - 2%);
+}
+.about .about-text{
+    width: calc(100% / 2 - 10%);
+    margin-right: 20px;
+}
+.about .about-text h3{
+    font-size: 1.7em;
+    color: var(--main-text-color);
+    margin-bottom: 10px;
+}
+.about .about-text p{
+    font-size: 1.2em;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+.about .about-text h5{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.about .about-text ul li{
+    margin-top: 10px;
+}
+/* End about */
+
+
+/* -----------madia queries */
+/* -------------mobile------------- */
+@media (max-width: 767px){
+    .about img{
+        display: none;
+    }
+    .about .about-text{
+        width: calc(100%);
+    }
+}
+
+
+/* ----------small screen---------------- */
+@media (min-width: 767px) and (max-width: 992px){
+}
+
+
+/* ----------medium screen--------------------- */
+@media (min-width: 992px) and (max-width: 1200px){
+}
+
+
+/* ---------large screen */
+@media (min-width: 1200px){
+
+}

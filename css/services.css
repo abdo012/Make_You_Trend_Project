@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    direction: rtl;
+}
+:root{
+    --main-color: #1746A2;
+    --second-color: #5F9DF7;
+    --main-text-color: #FF731D;
+    --white: #FFF7E9;
+    --bg-color: #263238;
+    --black-color: black;
+}
+/* Componats */
+.container{
+    width: 90%;
+    padding: 50px 0;
+    margin: 0 auto;
+}
+/* Start All Services */
+.all-services{
+    /* border: 1px solid red; */
+    min-height: calc(100vh - 140px);
+    margin: 40px auto !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.all-services .content-serv{
+    width: calc(100% - 10%);
+    margin-top: 40px;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.all-services .content-serv:nth-child(1) {
+    border: 3px solid #4768a0;
+}
+.all-services .content-serv:nth-child(2) {
+    border: 3px solid #da2723;
+}
+.all-services .content-serv:nth-child(3) {
+    border: 3px solid #e1306c;
+}
+.all-services .content-serv:nth-child(4) {
+    border: 3px solid #00aced;
+}
+.all-services .content-serv:nth-child(5) {
+    border: 3px solid black;
+}
+.all-services .content-serv i{
+    color: var(--white);
+    padding: 20px;
+    border-radius: 3px;
+    font-size: 1.4em;
+    position: absolute;
+    top: -30px;
+    right: 25px;
+}
+.all-services .content-serv:nth-child(1) i{
+    background-color: #4768a0;
+}
+.all-services .content-serv:nth-child(2) i{
+    background-color: #da2723;
+}
+.all-services .content-serv:nth-child(3) i{
+    background-color: #e1306c;
+}
+.all-services .content-serv:nth-child(4) i{
+    background-color: #00aced;
+}
+.all-services .content-serv:nth-child(5) i{
+    background-color: black;
+}
+.all-services .content-serv .the-serv{
+    width: calc(100% - 10%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 30px 0; */
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid gray;
+    transition: 0.5s ease;
+}
+.all-services .content-serv .the-serv:hover p{
+    color: var(--black-color);
+    font-size: 1em;
+    transition: 0.5s ease;
+}
+.all-services .content-serv .the-serv h3{
+    font-size: 1.2em;
+    color: var(--black-color);
+    transition: 0.5s ease;
+}
+.all-services .content-serv .the-serv p{
+    font-size: 0.9em;
+    color: gray;
+}
+.all-services .content-serv .the-serv button{
+    padding: 9px;
+    background-color: var(--main-text-color);
+    border: none;
+    border-radius: 5px;
+    color: var(--white);
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.5s ease;
+}
+.all-services .content-serv .the-serv button:hover{
+opacity: 1;
+}
+
+/* End All Services */
+
+
+/* -----------madia queries */
+/* -------------mobile------------- */
+@media (max-width: 767px){
+    .all-services .content-serv .the-serv{
+        width: calc(100% - 10%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 0;
+    }
+    .all-services .content-serv .the-serv p{
+        margin: 20px 0;
+    }
+}
+
+
+/* ----------small screen---------------- */
+@media (min-width: 767px) and (max-width: 992px){
+}
+
+
+/* ----------medium screen--------------------- */
+@media (min-width: 992px) and (max-width: 1200px){
+}
+
+
+/* ---------large screen */
+@media (min-width: 1200px){
+
+}

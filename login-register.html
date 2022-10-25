@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Test">
+    <title>تسجيل دخول | عضو جديد</title>
+    <!-- login & register style -->
+    <link rel="stylesheet" href="css/login-register.css">
+    <!-- Fav-Icon -->
+    <link rel="icon" href="img/fav icon.png">
+    <!-- main style sheet file -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- main mediaqueries file-->
+    <link rel="stylesheet" href="css/madia-queries.css">
+    <!-- fontawesome library -->
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+    <!-- Nav -->
+    <nav>
+        <div>
+            <span>
+                <a href="index.html">هنخليك تريند</a>
+                
+            <img src="img/logo2.png" alt="logo">
+            </span>
+        </div>
+        <i class="fas fa-bars bars"></i>
+        
+            <ul class="ul">
+                <span class="exit">X</span>
+                <li><a href="index.html">الرئيسيه</a></li>
+                <li><a href="about.html">من نحن</a></li>
+                <li><a href="services.html">خدماتنا</a></li>
+                <li><a href="contact.html">تواصل معنا</a></li>
+            </ul>
+    </nav>
+    <!-- Head -->
+    <div class="head container">
+            <a href="login-register-en.html" class="lang">English</a>
+        <div>
+            <a href="login-register.html">تسجيل الدخول</a>
+            <span>|</span>
+            <a href="login-register.html">عضو جديد</a>
+        </div>
+    </div>
+    <!-- login & register -->
+    <div class="login-register container">
+        <div class="btn">
+            <button class="btn active" data-show=".login">تسجيل دخول</button>
+            <button class="btn" data-show=".register">عضو جديد</button>
+        </div>
+        <div class="login">
+            <form action="" method="">
+            <input type="email" required placeholder="ادخل الايميل">
+            <input type="password" placeholder="ادخل الباسورد">
+            <input type="submit" value="تسجيل الدخول">
+            <span>ليس لدي حساب؟</span>
+            </form>
+        </div>
+        <div class="register">
+            <form action="" method="">
+                <input type="text" placeholder="اكتب اسمك">
+                <input type="email" required placeholder="ادخل الايميل">
+                <input type="password" placeholder="ادخل الباسورد">
+                <input type="submit" value="تسجيل">
+                <span>لدي حساب</span>
+                </form>
+        </div>
+    </div>
+<!-- Footer -->
+<footer>
+    <div class="text-footer">
+        <h5>هنخليك تريند لخدمات السوشيال ميديا</h5>
+        <p>
+            نقدم لكم جميع خدمات السوشيال ميديا والتسويق الالكتروني مثل مشاهدات اليوتيوب ومتابعين الانستجرام ومشاهدات الانستجرام ومتابعين تويتر, كما نقدم ايضا خدمه اداره المواقع واداره الحملات الاعلانيه علي الفيس بوك وعلي جوجل ادوردز
+        </p>
+    </div>
+    <img src="img/img-footer.png" alt="img-footer">
+    <div class="contact-text">
+        <h5>تواصل معنا </h5>
+        <i class="fas fa-envelope"></i>
+        <p>support@trend.com</p>
+        <h6>تابعنا</h6>
+        <div class="footer-icon">
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fas fa-envelope"></i>
+        </div>
+    </div>
+</footer>
+<!-- End Footer -->
+<div class="end-footer">
+    <p>جميع الحقوق محفوظه هنخليك تريند &copy;2022❤️</p>
+</div>
+    <!-- script -->
+    <script>
+        var all_btn = document.querySelectorAll(".btn .btn");
+        // console.log(all_btn)
+        var all_form =document.querySelectorAll(".login-register .login,.register")
+        // console.log(all_form)
+        all_btn.forEach((btn =>{
+            btn.addEventListener("click", remov_add_active);
+    btn.addEventListener("click", show_form);
+}));
+// ===========================
+function remov_add_active(){
+    // remve class active from button
+    all_btn.forEach((btn)=>{
+        btn.classList.remove("active")
+    });
+    // add class active in button
+    this.classList.add("active");
+};
+// ===========================
+    function show_form(e){
+
+    all_form.forEach((divs)=>{
+        divs.style.display = "none"
+    });
+    document.querySelector(e.currentTarget.dataset.show).style.display = "block";
+    };
+    </script>
+    <!-- script js file -->
+    <script src="js/main.js"></script>
+</body>
+</html>
